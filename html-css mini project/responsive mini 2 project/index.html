@@ -1,187 +1,130 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="fa">
+<html lang="fa" dir="rtl" data-theme="روشن">
   <head>
-    <meta charset="utf-8" />
-    <title>next1code site</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <link
-      rel="icon"
-      href="../html-css mini project/maghaleh project/images/favicon.png"
-      type="image/x-icon"
-    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>فروشگاه دوره های آموزشی</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
-  <body>
-    <div class="container">
-      <header class="header">
-        <img src="./assets/Images/n1ogo.png" alt="logo" class="logo" />
-        <nav>
-          <a href="#">صفحه نخست</a>
-          <a href="#">دوره‌ها</a>
-          <a href="#">درباره ما</a>
-        </nav>
-      </header>
-      <div class="under-header">
-        <div class="right">
-          <h1>برنامه نویسی با نکست وان کد</h1>
-          <p>
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
-            ستون و سطرآنچنان که لازم است
-          </p>
-          <button>شروع آموزش</button>
-        </div>
-        <div class="left">
-          <img src="./assets/Images/Screenshot 2024-10-10 120911.png" alt="" />
+  <body dir="rtl">
+    <header>
+      <nav>
+        <div class="logo">آکادمی آموزشی</div>
+        <ul>
+          <li><a href="#hero">خانه</a></li>
+          <li><a href="#courses">دوره ها</a></li>
+          <li><a href="#about">درباره ما</a></li>
+          <li>
+            <button id="theme-toggle" class="theme-toggle">
+              <i id="theme-icon" class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero" id="hero">
+      <div class="hero-content" data-aos="fade-up">
+        <h1>مسیر یادگیری خود را آغاز کنید</h1>
+        <p>با بهترین اساتید، پیشرفته‌ترین دوره‌ها را تجربه کنید</p>
+        <button class="cta-button" id="cta-button">مشاهده دوره‌ها</button>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">۱۰۰۰+</span>
+            <span class="stat-label">دانشجو</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">۵۰+</span>
+            <span class="stat-label">دوره</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">۲۰+</span>
+            <span class="stat-label">مدرس</span>
+          </div>
         </div>
       </div>
+    </section>
 
-      <h1 class="main-title">دوره‌های پیش فروش</h1>
-
-      <main class="main">
-        <article class="card js">
-          <img
-            src="./assets/Images/Screenshot%202024-09-30%20185617.png"
-            alt="JavaScript Course"
-            class="responsive"
-          />
-          <p>دوره پروژه محور جاوا اسکریپت</p>
-          <div class="divider"></div>
-          <div class="buy">
-            <button class="kharid">خرید</button>
-            <h3 class="ghaymat">۱.۴۹۹.۰۰۰ تومان</h3>
+    <section id="courses" class="courses">
+      <h2 data-aos="fade-up">دوره های پرطرفدار</h2>
+      <div class="course-grid">
+        <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+          <img src="./images/web-course.png" alt="Course 1" />
+          <div class="course-info">
+            <h3>برنامه نویسی وب</h3>
+            <p>آموزش کامل HTML, CSS و JavaScript</p>
+            <div class="price">۹۹۹,۰۰۰ تومان</div>
+            <button>ثبت نام در دوره</button>
+            <div class="course-meta">
+              <span><i class="far fa-clock"></i> ۲۰ ساعت</span>
+              <span><i class="far fa-user"></i> ۱۵۰ دانشجو</span>
+            </div>
           </div>
-        </article>
-        <article class="card res">
-          <img
-            src="./assets/Images/Screenshot%202024-09-30%20185606.png"
-            alt="Responsive Course"
-            class="responsive"
-          />
-          <p>دوره پروژه محور ریسپانسیو</p>
-          <div class="divider"></div>
-          <div class="buy">
-            <button class="kharid">خرید</button>
-            <h3 class="ghaymat">۱.۴۹۹.۰۰۰ تومان</h3>
+        </div>
+        <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+          <img src="./images/Python-course.png" alt="Course 2" />
+          <div class="course-info">
+            <h3>پایتون پیشرفته</h3>
+            <p>آموزش برنامه نویسی پایتون از صفر تا صد</p>
+            <div class="price">۸۹۹,۰۰۰ تومان</div>
+            <button>ثبت نام در دوره</button>
+            <div class="course-meta">
+              <span><i class="far fa-clock"></i> ۲۰ ساعت</span>
+              <span><i class="far fa-user"></i> ۱۵۰ دانشجو</span>
+            </div>
           </div>
-        </article>
-        <article class="card react">
-          <img
-            src="./assets/Images/Screenshot%202024-09-30%20185650.png"
-            alt="React Course"
-            class="responsive"
-          />
-          <p>دوره پروژه محور ری‌اکت</p>
-          <div class="divider"></div>
-          <div class="buy">
-            <button class="kharid">خرید</button>
-            <h3 class="ghaymat">۱.۴۹۹.۰۰۰ تومان</h3>
+        </div>
+        <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+          <img src="./images/AI-course.png" alt="Course 3" />
+          <div class="course-info">
+            <h3>هوش مصنوعی</h3>
+            <p>یادگیری ماشین و هوش مصنوعی</p>
+            <div class="price">۱,۲۹۹,۰۰۰ تومان</div>
+            <button>ثبت نام در دوره</button>
+            <div class="course-meta">
+              <span><i class="far fa-clock"></i> ۲۰ ساعت</span>
+              <span><i class="far fa-user"></i> ۱۵۰ دانشجو</span>
+            </div>
           </div>
-        </article>
-        <h1 class="main-title">اعضای تیم</h1>
-        <div class="team">
-          <article class="card-team">
-            <img
-              src="./assets/Images/Screenshot 2024-10-10 133041.png"
-              alt="JavaScript Course"
-              class="responsive"
-            />
-            <div class="mohtava">
-              <h1>میلاد بهرامی</h1>
-              <h3>برنامه نویس وب</h3>
-
-              <p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
-                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
-                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
-                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
-                جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را
-                برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در
-                زبان فارسی ایجاد کرد.
-              </p>
-            </div>
-          </article>
-
-          <article class="card-team">
-            <img
-              src="./assets/Images/Screenshot 2024-10-10 133041.png"
-              alt="JavaScript Course"
-              class="responsive"
-            />
-            <div class="mohtava">
-              <h1>میلاد بهرامی</h1>
-              <h3>برنامه نویس وب</h3>
-
-              <p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
-                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
-                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
-                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
-                جامعه و متخصصان را می طلبد.
-              </p>
-            </div>
-          </article>
-          <article class="card-team">
-            <img
-              src="./assets/Images/Screenshot 2024-10-10 133041.png"
-              alt="JavaScript Course"
-              class="responsive"
-            />
-            <div class="mohtava">
-              <h1>میلاد بهرامی</h1>
-              <h3>برنامه نویس وب</h3>
-
-              <p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
-                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
-                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
-                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
-                جامعه و متخصصان را می طلبد.
-              </p>
-            </div>
-          </article>
-          <article class="card-team">
-            <img
-              src="./assets/Images/Screenshot 2024-10-10 133041.png"
-              alt="JavaScript Course"
-              class="responsive"
-            />
-            <div class="mohtava">
-              <h1>میلاد بهرامی</h1>
-              <h3>برنامه نویس وب</h3>
-
-              <p>
-                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-                استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
-                در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
-                نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد،
-                کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان
-                جامعه و متخصصان را می طلبد.
-              </p>
-            </div>
-          </article>
         </div>
-      </main>
-      <footer>
-        <div class="right">
-          <h1>رسالت نکست وان کد</h1>
-          <p>
-            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
-            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
-            ستون و سطرآنچنان که لازم است،
-          </p>
+      </div>
+    </section>
+
+    <footer id="about">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>درباره ما</h4>
+          <p>ما متعهد به ارائه بهترین آموزش‌های آنلاین هستیم</p>
         </div>
-        <div class="left">
-          <img src="./assets/Images/Screenshot 2024-10-10 204128.png" alt="" />
+        <div class="footer-section">
+          <h4>تماس با ما</h4>
+          <p>ایمیل: contact@yourdomain.com</p>
+          <p>تلفن: ۰۲۱-۹۱۲۳۴۵۶۷</p>
         </div>
-      </footer>
-    </div>
+        <div class="footer-section">
+          <h4>شبکه‌های اجتماعی</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        offset: 100,
+        once: true,
+      });
+    </script>
+    <script src="script.js"></script>
   </body>
 </html>
